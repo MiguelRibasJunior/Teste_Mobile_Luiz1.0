@@ -130,6 +130,13 @@ export default function HomeScreen() {
 
         {/* Formulário */}
         <View style={styles.formContainer}>
+
+          
+          <Image
+            source={require('@/assets/images/Ronaldinho.webp')}
+            style={styles.imagem}
+            />
+          
           <Text style={styles.formTitle}>Minha Lista de Registros</Text>
         
           <TextInput
@@ -188,7 +195,7 @@ const styles = StyleSheet.create({
   titleText: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#000', // Texto preto visível
+    color: '#000', // Texto preto visível n consegui usar o h1 
   },
   reactLogo: {
     width: '100%',
@@ -198,6 +205,14 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
   },
+  imagem: {
+    width: '55%',
+    height: 100,
+    top: 0,
+    left: 50,
+    right: 0,
+  },
+
   sectionContainer: {
     marginTop: 10,
     marginBottom: 20,
